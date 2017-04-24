@@ -26,6 +26,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiply(a,b){ //eslint-disable-line
   console.log(a * b);
+  return a * b;
 }
 
 // Here is the test for multiply(); uncomment it to run it
@@ -47,6 +48,7 @@ function sumAndMultiply(a,b,c){ //eslint-disable-line
   console.log(a * b * c);
   console.log(a, ' and ', b, ' and ', c, ' sum to ', a + b + c);
   console.log('The product of ', a, ' and ', b, ' and ', c, ' is ', a * b * c);
+  return a * b * c;
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
@@ -87,10 +89,11 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(testArray){ //eslint-disable-line
-
+  test = 0;
+  var test = multiply(testArray[0],testArray[1]);
+  console.log(test);
 }
-
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(2,3,4);
+multiplyArray(2,3,4);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
